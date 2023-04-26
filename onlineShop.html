@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Online Shopping Page</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- Include jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Include Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Add some padding to the top of the page */
+    body {
+      padding-top: 50px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- Add a row for each item -->
+  <div class="row">
+    <!-- Add 5 items to the page -->
+    <div class="col-md-4">
+      <!-- Add an image for each product -->
+      <img src="https://tse3.mm.bing.net/th?id=OIP.mWBG5tL6kcPEQvNpl28jQAHaHa&pid=Api&P=0" class="img-responsive" alt="Milk" style="width: 30%; height: auto;">
+      <!-- Display a name and price for each product -->
+      <h4>Milk</h4>
+      <p>R10</p>
+      <!-- Add a button to buy each product -->
+      <button type="button" class="btn btn-primary">Buy</button>
+    </div>
+    <div class="col-md-4">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.xxLVv26kTkjfX2edKXKVfwHaHa&pid=Api&P=0" class="img-responsive" alt="Sugar" style="width: 30%; height: auto;">
+      <h4>Sugar</h4>
+      <p>R20</p>
+      <button type="button" class="btn btn-primary">Buy</button>
+    </div>
+    <div class="col-md-4">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.RNsAjWDYNV0qGlbufEnKCgAAAA&pid=Api&P=0" class="img-responsive" alt="Honey" style="width: 20%; height: auto;">
+      <h4>Honey</h4>
+      <p>R30</p>
+      <button type="button" class="btn btn-primary">Buy</button>
+    </div>
+    <div class="col-md-4">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.ihwlb5gj8WCGYTTb0S_kgwHaJ4&pid=Api&P=0" class="img-responsive" alt="Coffee" style="width: 30%; height: auto;">
+      <h4>Coffee</h4>
+      <p>R40</p>
+      <button type="button" class="btn btn-primary">Buy</button>
+    </div>
+    <div class="col-md-4">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.S4WMjszOpIw2ZrDVc63EhgAAAA&pid=Api&P=0" class="img-responsive" alt="Tea" style="width: 30%; height: auto;">
+      <h4>Tea</h4>
+      <p>R50</p>
+      <button type="button" class="btn btn-primary">Buy</button>
+    </div>
+  </div>
+  <!-- Add a footer with a horizontal form and company logo -->
+  <footer class="navbar-fixed-bottom">
+    <div class="container-fluid">
+      <form class="form-inline">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" placeholder="">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="">
+        </div>
+
+        <div class = "form-group pull-right">
+          <img src ="https://tse1.mm.bing.net/th?id=OIP.KsFWqv1f8aEfX88xxwZDLAHaDv&pid=Api&P=0" alt="SBL" style="width: 20%; height: auto;">
+        </div>
+
+      </form>
+
+    </div>
+
+  </footer>
+
+</div>
+<!-- Add some JavaScript to make the images responsive -->
+<script type='text/javascript'>
+  jQuery(document).ready(function($) {
+    $('.img-responsive').hover(function(){
+      $(this).attr('src', $(this).attr('src').replace('.png', '_hover.png'));
+    }, function(){
+      $(this).attr('src', $(this).attr('src').replace('_hover.png', '.png'));
+    });
+  });
+</script>
+
+</body>
+</html>
